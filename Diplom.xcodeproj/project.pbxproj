@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		306C14AC2A0208CB00B5FB1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 306C14AB2A0208CB00B5FB1A /* GoogleService-Info.plist */; };
+		306C14AE2A0211E900B5FB1A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14AD2A0211E900B5FB1A /* ImagePicker.swift */; };
+		306C14B12A0235B500B5FB1A /* MainMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14B02A0235B500B5FB1A /* MainMessageView.swift */; };
+		306C14B42A024AAF00B5FB1A /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14B32A024AAF00B5FB1A /* FirebaseManager.swift */; };
+		306C14B72A02549400B5FB1A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 306C14B62A02549400B5FB1A /* SDWebImageSwiftUI */; };
+		306C14B92A0363F800B5FB1A /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14B82A0363F800B5FB1A /* ChatUser.swift */; };
+		306C14BD2A0367FA00B5FB1A /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14BC2A0367FA00B5FB1A /* NewMessageView.swift */; };
+		306C14C02A036D2600B5FB1A /* MainMessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14BF2A036D2600B5FB1A /* MainMessagesViewModel.swift */; };
+		306C14C22A036D6C00B5FB1A /* CreateNewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14C12A036D6C00B5FB1A /* CreateNewMessageViewModel.swift */; };
+		306C14C42A03A68000B5FB1A /* ChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14C32A03A68000B5FB1A /* ChatLogView.swift */; };
+		306C14C62A1D10C600B5FB1A /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14C52A1D10C600B5FB1A /* FirebaseConstants.swift */; };
+		306C14C82A1D4D9300B5FB1A /* RecentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14C72A1D4D9300B5FB1A /* RecentMessage.swift */; };
+		306C14CB2A1D4EDA00B5FB1A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 306C14CA2A1D4EDA00B5FB1A /* FirebaseAuth */; };
+		306C14CD2A1D4EDA00B5FB1A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 306C14CC2A1D4EDA00B5FB1A /* FirebaseFirestore */; };
+		306C14CF2A1D4EDA00B5FB1A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 306C14CE2A1D4EDA00B5FB1A /* FirebaseFirestoreSwift */; };
+		306C14D12A1D4EDA00B5FB1A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 306C14D02A1D4EDA00B5FB1A /* FirebaseStorage */; };
+		306C14D32A1D5AF700B5FB1A /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14D22A1D5AF700B5FB1A /* ChatMessage.swift */; };
+		306C14D52A20169200B5FB1A /* ChatLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C14D42A20169100B5FB1A /* ChatLogViewModel.swift */; };
+		30DF6DDE29F905E100A96E4E /* DiplomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF6DDD29F905E100A96E4E /* DiplomApp.swift */; };
+		30DF6DE029F905E100A96E4E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF6DDF29F905E100A96E4E /* LoginView.swift */; };
+		30DF6DE229F905E300A96E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DF6DE129F905E300A96E4E /* Assets.xcassets */; };
+		30DF6DE529F905E300A96E4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DF6DE429F905E300A96E4E /* Preview Assets.xcassets */; };
+		30DF6DEF29F905E300A96E4E /* DiplomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF6DEE29F905E300A96E4E /* DiplomTests.swift */; };
+		30DF6DF929F905E300A96E4E /* DiplomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF6DF829F905E300A96E4E /* DiplomUITests.swift */; };
+		30DF6DFB29F905E300A96E4E /* DiplomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF6DFA29F905E300A96E4E /* DiplomUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30DF6DEB29F905E300A96E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30DF6DD229F905E100A96E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30DF6DD929F905E100A96E4E;
+			remoteInfo = Diplom;
+		};
+		30DF6DF529F905E300A96E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30DF6DD229F905E100A96E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30DF6DD929F905E100A96E4E;
+			remoteInfo = Diplom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		306C14AB2A0208CB00B5FB1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		306C14AD2A0211E900B5FB1A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		306C14B02A0235B500B5FB1A /* MainMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessageView.swift; sourceTree = "<group>"; };
+		306C14B32A024AAF00B5FB1A /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		306C14B82A0363F800B5FB1A /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		306C14BC2A0367FA00B5FB1A /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		306C14BF2A036D2600B5FB1A /* MainMessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessagesViewModel.swift; sourceTree = "<group>"; };
+		306C14C12A036D6C00B5FB1A /* CreateNewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMessageViewModel.swift; sourceTree = "<group>"; };
+		306C14C32A03A68000B5FB1A /* ChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogView.swift; sourceTree = "<group>"; };
+		306C14C52A1D10C600B5FB1A /* FirebaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
+		306C14C72A1D4D9300B5FB1A /* RecentMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMessage.swift; sourceTree = "<group>"; };
+		306C14D22A1D5AF700B5FB1A /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		306C14D42A20169100B5FB1A /* ChatLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogViewModel.swift; sourceTree = "<group>"; };
+		30DF6DDA29F905E100A96E4E /* Diplom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diplom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30DF6DDD29F905E100A96E4E /* DiplomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomApp.swift; sourceTree = "<group>"; };
+		30DF6DDF29F905E100A96E4E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		30DF6DE129F905E300A96E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30DF6DE429F905E300A96E4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30DF6DEA29F905E300A96E4E /* DiplomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiplomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30DF6DEE29F905E300A96E4E /* DiplomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomTests.swift; sourceTree = "<group>"; };
+		30DF6DF429F905E300A96E4E /* DiplomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiplomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30DF6DF829F905E300A96E4E /* DiplomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomUITests.swift; sourceTree = "<group>"; };
+		30DF6DFA29F905E300A96E4E /* DiplomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30DF6DD729F905E100A96E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306C14B72A02549400B5FB1A /* SDWebImageSwiftUI in Frameworks */,
+				306C14CB2A1D4EDA00B5FB1A /* FirebaseAuth in Frameworks */,
+				306C14CD2A1D4EDA00B5FB1A /* FirebaseFirestore in Frameworks */,
+				306C14D12A1D4EDA00B5FB1A /* FirebaseStorage in Frameworks */,
+				306C14CF2A1D4EDA00B5FB1A /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DF6DE729F905E300A96E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DF6DF129F905E300A96E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		306C14B22A024A8E00B5FB1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				306C14B32A024AAF00B5FB1A /* FirebaseManager.swift */,
+				306C14AD2A0211E900B5FB1A /* ImagePicker.swift */,
+				306C14C52A1D10C600B5FB1A /* FirebaseConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		306C14BA2A0364B500B5FB1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				306C14B82A0363F800B5FB1A /* ChatUser.swift */,
+				306C14C72A1D4D9300B5FB1A /* RecentMessage.swift */,
+				306C14D22A1D5AF700B5FB1A /* ChatMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		306C14BB2A0367C300B5FB1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30DF6DDF29F905E100A96E4E /* LoginView.swift */,
+				306C14B02A0235B500B5FB1A /* MainMessageView.swift */,
+				306C14BC2A0367FA00B5FB1A /* NewMessageView.swift */,
+				306C14C32A03A68000B5FB1A /* ChatLogView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		306C14BE2A036CF000B5FB1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				306C14BF2A036D2600B5FB1A /* MainMessagesViewModel.swift */,
+				306C14C12A036D6C00B5FB1A /* CreateNewMessageViewModel.swift */,
+				306C14D42A20169100B5FB1A /* ChatLogViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30DF6DD129F905E100A96E4E = {
+			isa = PBXGroup;
+			children = (
+				306C14AB2A0208CB00B5FB1A /* GoogleService-Info.plist */,
+				30DF6DDC29F905E100A96E4E /* Diplom */,
+				30DF6DED29F905E300A96E4E /* DiplomTests */,
+				30DF6DF729F905E300A96E4E /* DiplomUITests */,
+				30DF6DDB29F905E100A96E4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30DF6DDB29F905E100A96E4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30DF6DDA29F905E100A96E4E /* Diplom.app */,
+				30DF6DEA29F905E300A96E4E /* DiplomTests.xctest */,
+				30DF6DF429F905E300A96E4E /* DiplomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30DF6DDC29F905E100A96E4E /* Diplom */ = {
+			isa = PBXGroup;
+			children = (
+				30DF6DDD29F905E100A96E4E /* DiplomApp.swift */,
+				306C14BE2A036CF000B5FB1A /* ViewModel */,
+				306C14BB2A0367C300B5FB1A /* View */,
+				306C14BA2A0364B500B5FB1A /* Model */,
+				306C14B22A024A8E00B5FB1A /* Utils */,
+				30DF6DE129F905E300A96E4E /* Assets.xcassets */,
+				30DF6DE329F905E300A96E4E /* Preview Content */,
+			);
+			path = Diplom;
+			sourceTree = "<group>";
+		};
+		30DF6DE329F905E300A96E4E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				30DF6DE429F905E300A96E4E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30DF6DED29F905E300A96E4E /* DiplomTests */ = {
+			isa = PBXGroup;
+			children = (
+				30DF6DEE29F905E300A96E4E /* DiplomTests.swift */,
+			);
+			path = DiplomTests;
+			sourceTree = "<group>";
+		};
+		30DF6DF729F905E300A96E4E /* DiplomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30DF6DF829F905E300A96E4E /* DiplomUITests.swift */,
+				30DF6DFA29F905E300A96E4E /* DiplomUITestsLaunchTests.swift */,
+			);
+			path = DiplomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30DF6DD929F905E100A96E4E /* Diplom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30DF6DFE29F905E300A96E4E /* Build configuration list for PBXNativeTarget "Diplom" */;
+			buildPhases = (
+				30DF6DD629F905E100A96E4E /* Sources */,
+				30DF6DD729F905E100A96E4E /* Frameworks */,
+				30DF6DD829F905E100A96E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diplom;
+			packageProductDependencies = (
+				306C14B62A02549400B5FB1A /* SDWebImageSwiftUI */,
+				306C14CA2A1D4EDA00B5FB1A /* FirebaseAuth */,
+				306C14CC2A1D4EDA00B5FB1A /* FirebaseFirestore */,
+				306C14CE2A1D4EDA00B5FB1A /* FirebaseFirestoreSwift */,
+				306C14D02A1D4EDA00B5FB1A /* FirebaseStorage */,
+			);
+			productName = Diplom;
+			productReference = 30DF6DDA29F905E100A96E4E /* Diplom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30DF6DE929F905E300A96E4E /* DiplomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30DF6E0129F905E300A96E4E /* Build configuration list for PBXNativeTarget "DiplomTests" */;
+			buildPhases = (
+				30DF6DE629F905E300A96E4E /* Sources */,
+				30DF6DE729F905E300A96E4E /* Frameworks */,
+				30DF6DE829F905E300A96E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30DF6DEC29F905E300A96E4E /* PBXTargetDependency */,
+			);
+			name = DiplomTests;
+			productName = DiplomTests;
+			productReference = 30DF6DEA29F905E300A96E4E /* DiplomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30DF6DF329F905E300A96E4E /* DiplomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30DF6E0429F905E300A96E4E /* Build configuration list for PBXNativeTarget "DiplomUITests" */;
+			buildPhases = (
+				30DF6DF029F905E300A96E4E /* Sources */,
+				30DF6DF129F905E300A96E4E /* Frameworks */,
+				30DF6DF229F905E300A96E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30DF6DF629F905E300A96E4E /* PBXTargetDependency */,
+			);
+			name = DiplomUITests;
+			productName = DiplomUITests;
+			productReference = 30DF6DF429F905E300A96E4E /* DiplomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30DF6DD229F905E100A96E4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					30DF6DD929F905E100A96E4E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					30DF6DE929F905E300A96E4E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 30DF6DD929F905E100A96E4E;
+					};
+					30DF6DF329F905E300A96E4E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 30DF6DD929F905E100A96E4E;
+					};
+				};
+			};
+			buildConfigurationList = 30DF6DD529F905E100A96E4E /* Build configuration list for PBXProject "Diplom" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30DF6DD129F905E100A96E4E;
+			packageReferences = (
+				306C14B52A02549400B5FB1A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				306C14C92A1D4EDA00B5FB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 30DF6DDB29F905E100A96E4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30DF6DD929F905E100A96E4E /* Diplom */,
+				30DF6DE929F905E300A96E4E /* DiplomTests */,
+				30DF6DF329F905E300A96E4E /* DiplomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30DF6DD829F905E100A96E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DF6DE529F905E300A96E4E /* Preview Assets.xcassets in Resources */,
+				30DF6DE229F905E300A96E4E /* Assets.xcassets in Resources */,
+				306C14AC2A0208CB00B5FB1A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DF6DE829F905E300A96E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DF6DF229F905E300A96E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30DF6DD629F905E100A96E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306C14AE2A0211E900B5FB1A /* ImagePicker.swift in Sources */,
+				306C14C42A03A68000B5FB1A /* ChatLogView.swift in Sources */,
+				306C14D32A1D5AF700B5FB1A /* ChatMessage.swift in Sources */,
+				306C14B12A0235B500B5FB1A /* MainMessageView.swift in Sources */,
+				306C14BD2A0367FA00B5FB1A /* NewMessageView.swift in Sources */,
+				306C14B42A024AAF00B5FB1A /* FirebaseManager.swift in Sources */,
+				306C14B92A0363F800B5FB1A /* ChatUser.swift in Sources */,
+				30DF6DE029F905E100A96E4E /* LoginView.swift in Sources */,
+				30DF6DDE29F905E100A96E4E /* DiplomApp.swift in Sources */,
+				306C14C82A1D4D9300B5FB1A /* RecentMessage.swift in Sources */,
+				306C14C22A036D6C00B5FB1A /* CreateNewMessageViewModel.swift in Sources */,
+				306C14D52A20169200B5FB1A /* ChatLogViewModel.swift in Sources */,
+				306C14C62A1D10C600B5FB1A /* FirebaseConstants.swift in Sources */,
+				306C14C02A036D2600B5FB1A /* MainMessagesViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DF6DE629F905E300A96E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DF6DEF29F905E300A96E4E /* DiplomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DF6DF029F905E300A96E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DF6DF929F905E300A96E4E /* DiplomUITests.swift in Sources */,
+				30DF6DFB29F905E300A96E4E /* DiplomUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30DF6DEC29F905E300A96E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30DF6DD929F905E100A96E4E /* Diplom */;
+			targetProxy = 30DF6DEB29F905E300A96E4E /* PBXContainerItemProxy */;
+		};
+		30DF6DF629F905E300A96E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30DF6DD929F905E100A96E4E /* Diplom */;
+			targetProxy = 30DF6DF529F905E300A96E4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30DF6DFC29F905E300A96E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30DF6DFD29F905E300A96E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30DF6DFF29F905E300A96E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diplom/Preview Content\"";
+				DEVELOPMENT_TEAM = RV4776Q42L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flomeister.Diplom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30DF6E0029F905E300A96E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diplom/Preview Content\"";
+				DEVELOPMENT_TEAM = RV4776Q42L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flomeister.Diplom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30DF6E0229F905E300A96E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RV4776Q42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flomeister.DiplomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diplom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Diplom";
+			};
+			name = Debug;
+		};
+		30DF6E0329F905E300A96E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RV4776Q42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flomeister.DiplomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diplom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Diplom";
+			};
+			name = Release;
+		};
+		30DF6E0529F905E300A96E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RV4776Q42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flomeister.DiplomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Diplom;
+			};
+			name = Debug;
+		};
+		30DF6E0629F905E300A96E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RV4776Q42L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flomeister.DiplomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Diplom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30DF6DD529F905E100A96E4E /* Build configuration list for PBXProject "Diplom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DF6DFC29F905E300A96E4E /* Debug */,
+				30DF6DFD29F905E300A96E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30DF6DFE29F905E300A96E4E /* Build configuration list for PBXNativeTarget "Diplom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DF6DFF29F905E300A96E4E /* Debug */,
+				30DF6E0029F905E300A96E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30DF6E0129F905E300A96E4E /* Build configuration list for PBXNativeTarget "DiplomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DF6E0229F905E300A96E4E /* Debug */,
+				30DF6E0329F905E300A96E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30DF6E0429F905E300A96E4E /* Build configuration list for PBXNativeTarget "DiplomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DF6E0529F905E300A96E4E /* Debug */,
+				30DF6E0629F905E300A96E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		306C14B52A02549400B5FB1A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		306C14C92A1D4EDA00B5FB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		306C14B62A02549400B5FB1A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306C14B52A02549400B5FB1A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		306C14CA2A1D4EDA00B5FB1A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306C14C92A1D4EDA00B5FB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		306C14CC2A1D4EDA00B5FB1A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306C14C92A1D4EDA00B5FB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		306C14CE2A1D4EDA00B5FB1A /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306C14C92A1D4EDA00B5FB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		306C14D02A1D4EDA00B5FB1A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306C14C92A1D4EDA00B5FB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 30DF6DD229F905E100A96E4E /* Project object */;
+}
