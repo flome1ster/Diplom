@@ -123,6 +123,7 @@ struct MainMessagesView: View {
                                     .font(.system(size: 14))
                                     .foregroundColor(Color(.darkGray))
                                     .multilineTextAlignment(.leading)
+                                    .lineLimit(2)
                             }
                             Spacer()
                             
