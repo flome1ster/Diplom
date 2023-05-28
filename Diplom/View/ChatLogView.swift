@@ -9,11 +9,6 @@ import SwiftUI
 import Firebase
 
 struct ChatLogView: View {
-//    let chatUser: ChatUser?
-//    init(chatUser: ChatUser?){
-//        self.chatUser = chatUser
-//        self.vm = .init(chatUser: chatUser)
-//    }
     @ObservedObject var vm: ChatLogViewModel
     var body: some View {
         ZStack{
@@ -24,6 +19,7 @@ struct ChatLogView: View {
             VStack(spacing: 0){
                 Spacer()
                 Divider()
+                    .offset(y: -5)
                 chatBottomBar
                     .background(Color.white)
             }
@@ -33,11 +29,7 @@ struct ChatLogView: View {
             .onDisappear{
                 vm.firestoreListener?.remove()
             }
-//            .navigationBarItems(trailing: Button(action: {
-//                vm.count += 1
-//            }, label: {
-//                Text("Count: \(vm.count)")
-//            }))
+
     }
     static let emptyScrollToString = "Empty"
     private var messagesView: some View{
@@ -59,8 +51,7 @@ struct ChatLogView: View {
                         
                     }
             }
-            
-            //.frame(height: 50)
+
         }
         .background(Color(.init(white: 0.95, alpha: 1)))
         .padding(.bottom, 65)
@@ -68,9 +59,9 @@ struct ChatLogView: View {
     }
     private var chatBottomBar: some View{
         HStack(spacing: 16){
-            Image(systemName: "photo.on.rectangle.angled")
-                .font(.system(size: 25))
-                .foregroundColor(Color(.darkGray))
+//            Image(systemName: "photo.on.rectangle.angled")
+//                .font(.system(size: 25))
+//                .foregroundColor(Color(.darkGray))
             ZStack{
             DescriptionPlaceholder()
                 TextEditor(text: $vm.chatText)
@@ -141,9 +132,6 @@ private struct DescriptionPlaceholder: View {
 }
 struct ChatLogView_Previews: PreviewProvider {
     static var previews: some View {
-//        NavigationView{
-//            ChatLogView(chatUser: .init(data: ["uid": "y1rPUNGZe9Nna1PhQyfHRJUESUb2", "email": "green@mail.ru"]))
-//        }
         MainMessagesView()
     }
 }
